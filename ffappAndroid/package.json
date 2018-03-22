@@ -1,0 +1,47 @@
+{
+  "name": "ffappAndroid",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android-linux": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@firebase/app-types": "0.1.0",
+    "babel-core": "^7.0.0-beta.3",
+    "firebase": "4.11.0",
+    "lodash": "4.17.5",
+    "moment": "2.19.1",
+    "react": "16.3.0-alpha.1",
+    "react-native": "0.54.2",
+    "react-native-animatable": "1.2.4",
+    "react-native-autogrow-textinput": "5.1.1",
+    "react-native-communications": "2.2.1",
+    "react-native-image-slider": "2.0.3",
+    "react-native-linear-gradient": "2.4.0",
+    "react-native-phone-call": "1.0.4",
+    "react-native-push-notification": "3.0.2",
+    "react-native-router-flux": "4.0.0-beta.28",
+    "react-native-scrollable-tab-menu": "1.0.6",
+    "react-native-scrollable-tab-view": "0.8.0",
+    "react-native-simple-radio-button": "2.7.1",
+    "react-native-tabbed-view-pager-android": "1.0.4",
+    "react-native-tabs": "1.0.9",
+    "react-native-timeago": "0.4.0",
+    "react-native-vector-icons": "4.5.0",
+    "react-navigation": "1.5.7",
+    "react-redux": "5.0.7",
+    "redux": "3.7.2",
+    "redux-thunk": "2.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "23.0.0-alpha.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.2",
+    "react-test-renderer": "16.3.0-alpha.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
